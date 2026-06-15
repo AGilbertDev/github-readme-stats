@@ -18,5 +18,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote add upstream https://github.com/anuraghazra/github-readme-stats.git
           git fetch upstream
-          git merge upstream/master -m "chore: sync upstream"
+          git merge upstream/master --allow-unrelated-histories -m "chore: sync upstream"
           git push origin master
